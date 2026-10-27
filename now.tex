@@ -1,0 +1,282 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+% \usepackage[hidelinks]{hyperref} % For hyperlinks, without colors and borders
+\usepackage[colorlinks=true,    % 彩色文字而不是彩色边框
+            linkcolor=blue,     % 文内交叉引用（\ref等）的颜色
+            urlcolor=blue,      % \url 和 \href 的颜色
+            citecolor=red]{hyperref}  % 参考文献引用的颜色
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+% \usepackage{textcomp}
+%  for icon
+\usepackage{fontawesome5}
+\usepackage{academicons}  % 学术图标
+% \usepackage[hidelinks]{hyperref}  % 隐藏链接边框
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{gobble}
+\fancyhead{}
+% \fancyhead[L]{\textit{Shuai Zhou}}
+% \fancyhead[R]{\textit{Apr 2024}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\vspace*{-0.55in}
+\begin{center}
+{\fontsize{20pt}{36pt}\selectfont\textbf{SHUAI ZHOU}}\\[2pt] % Name
+Master Student of Robotics \\[1pt]
+\faEnvelope\ shuaizho@cs.cmu.edu
+\quad \textbar{} \quad
+\faHome\ shuai-zhou.com
+\quad \textbar{} \quad
+\faGithub\ ShuaiZhou302
+% \quad \textbar{} \quad
+% \faGraduationCap\ \href{https://scholar.google.com/citations?user=ONn1TXAAAAAJ&hl=en&oi=sra}{Shuai Zhou}
+ % Contact info
+\end{center}
+\vspace{-0.20in}
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont E}\textbf{\scshape DUCATIONS}}}
+% \par\vspace{4pt}\noindent
+\vspace{-0.10in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY \hfill Pittsburgh, USA}}\\ % University name and location
+\textit{Master of Science in Robotics  \hfill Aug 2026 | Jun 2028} \\
+\textit{Advisor: \textbf{Zackory Erickson}}
+\par\vspace{4pt}\noindent
+{\textbf{\fontsize{12pt}{4pt}\selectfont S}\textbf{\scshape OUTH CHINA UNIVERSITY OF TECHNOLOGY\hfill Guangzhou, China}}\\ % University name and location
+\textit{Bachelor of Engineering in Robotics  \hfill Aug 2022 | Jun 2026} 
+\par\vspace{4pt}\noindent
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY \hfill Pittsburgh, USA}}\\ % University name and location
+\textit{Visiting Student in the Robotics Institute  \hfill Jun 2025 | Mar 2026} \\
+\textit{Advisor: \textbf{Jiaoyang Li, Ding Zhao}}
+\par\vspace{4pt}\noindent
+{\textbf{\fontsize{12pt}{4pt}\selectfont U}\textbf{\scshape NIVERSITY OF CALIFORNIA, BERKELEY\hfill Berkeley, USA}}\\ % University name and location
+\textit{Exchange Student in EECS \hfill   Aug 2023 | Dec 2023} % Degree and GPA
+
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont P}\textbf{\scshape UBLICATIONS (* equal contribution)}}}
+\vspace{-0.10in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont P}\textbf{\scshape REPRINTS}}
+% \par\vspace{4pt}\noindent
+\vspace{-0.05in}
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2em]
+% \par\textup{Under Review, 2026. \href{https://arxiv.org/abs/2604.13015}{[Paper]} \href{https://humanoid-touch-dream.github.io/}{[Project]} \href{https://github.com/chrisyrniu/humanoid-touch-dream}{[Code]} 
+% \href{https://spectrum.ieee.org/video-friday-humanoid-robot-production}{[Media]}
+% }
+% \item \textbf{EgoX: Egocentric Cross-Embodiment Learning for Versatile Manipulation}
+% \par\textup{Yaru Niu, Binghong Chen, Zhenlong Fang, Changwei Yao, Hao Zhang, Yuemin Mao, \underline{\textbf{Shuai Zhou}}, Bingqing Chen, Chen Qiu, Eric H. Tseng, Jonathan Francis, Ding Zhao. }
+% \par\textup{Under Review, 2026. \href{https://humanoid-touch-dream.github.io/}{[Project]}
+% }
+\item \textbf{ActiveScale: Scaling Active Perception for Robots across
+Model, Data, and Hardware}
+\par\textup{\underline{Shuai Zhou}*, Kaisheng Pang*, Wenxuan Song, Wenjie Zhang, Xinhu Zheng, Haoang Li. \\ \textbf{Under Review, 2026}  \href{https://arxiv.org/abs/2609.18514}{[Paper]}}
+\item \textbf{UniWAM: Unified World-Action Model}
+\par\textup{Jiayi Chen*, Wenxuan Song*, Jingbo Wang*, \underline{Shuai Zhou*}, Xicheng Gong*, Zehua Fan, Ziyang Zhou, Junwu E, Haodong Yan, Fuhao Li, Qize Yu, Xu Huang, Pengwei Wang, Wen Chen, Shunbo Zhou, Haoang Li. \\ \textbf{Under Review, 2026} \href{https://arxiv.org/abs/2610.02054}{[Paper]}}
+
+\item \textbf{From Discrete Plans to Real-World Execution: A World-Model-Driven Framework for Execution-Aware Multi-Agent Path Finding}
+\par\textup{Jingtian Yan, \underline{Shuai Zhou}, He Jiang, Stephen Smith, Jiaoyang Li. \\ \textbf{Under Review, 2026} \href{https://arxiv.org/abs/2511.21886}{[Paper]}}
+% \par\textup{Under Review, 2026. \href{https://arxiv.org/abs/2511.21886}{[Paper]}}
+\item \textbf{EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming}
+\par\textup{Yaru Niu*, Binghong Chen*, Changwei Yao*, Shangtao Li*, Zhenlong Fang*, Revanth Krishna Senthilkumaran, \underline{Shuai Zhou}, Yuemin Mao, Kalie Ching, Po-Ju Chao, Yudong Luo, Peiqi Yu, Heng Zhang, Hao Zhang, Bingqing Chen, Chen Qiu, Hongtei (Eric) Tseng, Changliu Liu, Jonathan Francis, Ding Zhao. \\\textbf{Under Review, 2026} \href{https://egox-embodiment.github.io/assets/egox.pdf}{[Paper]} }
+
+% \item \textbf{EgoANT: 
+% Segmentation and Annotation for Egocentric Human Video with open-source VLM}
+% \par\textup{\underline{Shuai Zhou} \textbf{Blog, 2026} \href{https://www.shuai-zhou.com/egoant-report/?lang=en}{[Blog]}}
+\end{enumerate}
+\vspace{-0.02in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ONFERENCE PROCEEDINGS}}
+\vspace{-0.05in}
+% \par\vspace{4pt}\noindent
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2em, resume]
+\item \textbf{LAMP: Long-Horizon Adaptive Manipulation Planning for Multi-Robot Collaboration in Cluttered Space}
+\par\textup{\underline{Shuai Zhou}, Yorai Shaoul, Jiaoyang Li.  \\ \textbf{IROS, 2026}.  
+\href{https://arxiv.org/abs/2606.29358}{[Paper]} }
+
+% \href{https://github.com/ShuaiZhou302/LAMP}{[Code]} }
+% \par\textup{Under Review, 2026.  \href{https://multi-robot-lamp.github.io/}{[Project]}}
+\item \textbf{HTD: Learning Versatile Humanoid Manipulation with Touch Dreaming}
+\par\textup{Yaru Niu, Zhenlong Fang, Binghong Chen, \underline{Shuai Zhou}, Revanth Krishna Senthilkumaran, Hao Zhang, Bingqing Chen, Chen Qiu, Hongtei (Eric) Tseng, Jonathan Francis, Ding Zhao. \\ \textbf{IROS, 2026.} \href{https://arxiv.org/abs/2604.13015}{[Paper]}}
+% \href{https://github.com/chrisyrniu/humanoid-touch-dream}{[Code]} 
+% \href{https://spectrum.ieee.org/video-friday-humanoid-robot-production}{[Media]}}
+\item \textbf{LSRP*: Scalable and Anytime Planning for Multi-Agent Path Finding with Asynchronous Actions}
+\par\textup{\underline{Shuai Zhou}, Shizhe Zhao, Zhongqiang Ren. \\ \textbf{SoCS, 2025.} \href{https://doi.org/10.1609/socs.v18i1.36016}{[Paper]}  }   % Project name and location  
+% \par\textup{SoCS, 2025. \href{https://doi.org/10.1609/socs.v18i1.36016}{[Paper]}  \href{https://rap-lab.github.io/research/mapfaa}{[Project]}} 
+\item \textbf{Loosely Synchronized Rule-Based Planning for Multi-Agent Path Finding with Asynchronous Actions}
+\par\textup{\underline{Shuai Zhou}, Shizhe Zhao, Zhongqiang Ren. \\ \textbf{AAAI, 2025.} \href{https://doi.org/10.1609/aaai.v39i14.33618}{[Paper]} }
+% \href{https://github.com/rap-lab-org/public_LSRP}{[Code]}}  % Project name and location 
+% \par\textup{AAAI, 2025. \href{https://doi.org/10.1609/aaai.v39i14.33618}{[Paper]} \href{https://rap-lab.github.io/research/mapfaa}{[Project]} \href{https://github.com/rap-lab-org/public_LSRP}{[Code]} }
+\end{enumerate}
+\vspace{-0.02in}
+\vspace{-0.10in}
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont E}\textbf{\scshape XPERIENCES}}}
+\vspace{-0.10in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY\hfill Pittsburgh, USA}}
+\par \textbf{Graduate Research Assistant}, advised by \href{https://zackory.com/}{Zackory Erickson} \hfill \textit{Aug 2026 | Present}
+\par \textbf{Research Topics}: Dexterous Manipulation, Representation Learning. % Position and duration
+% \par Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [2]. 
+% \par Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [1]. \\
+\vspace{-0.05in}
+\begin{itemize}
+    \item Action tokenisation for generative dexterous manipulation control.
+    \item Dexterous manipulation for tool use with curriculum learning.
+\end{itemize}
+\vspace{-0.02in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont H}\textbf{\scshape ONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY (GUANGZHOU) \hfill Guangzhou, China}}
+\par \textbf{Research Assistant}, advised by \href{https://sites.google.com/view/haoangli/homepage}{Haoang Li}  \hfill \textit{Mar 2026 | Present}
+\par\textbf{Research Topics}: Robot Foundation Model, Active Perception, Egocentric Human Data.% Position and duration
+% \par Building an AVP-ALOHA teleoperation system for active-perception data collection and robot foundation model.
+% \par Physics and action understanding in VLA pretraining, and sub-task annotation of egocentric human videos. \\
+\vspace{-0.05in}
+\begin{itemize}
+    % \item \textbf{Research Topics}: Robot Foundation Model, Active Perception, Egocentric Human Data
+    \item Scaling Active Perception VLA with AMP teleoperation system and Human-Robot co-training [1].
+    \item World action model pretraining with egocentric-human data and corresponding annotation pipeline [2].
+    % \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [2].
+    % \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
+    % \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
+\end{itemize} 
+\vspace{-0.02in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY \hfill Pittsburgh, USA}}
+\par \textbf{Visiting Researcher}, advised by \href{https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html}{Ding Zhao} \hfill \textit{Aug 2025 | Mar 2026}
+\par \textbf{Research Topics}: Humanoid, Egocentric Human Data, Whole-Body Controller. 
+ % Position and duration
+% \par Learning versatile humanoid manipulation policy and developing robust lower-body controller [3]. \\
+\vspace{-0.05in}
+\begin{itemize}
+    \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [6].
+    \item Egocentric cross-embodiment manipulation with embodiment-specific latent prediction [4].
+    % \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
+    % \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
+\end{itemize}
+\vspace{-0.02in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY\hfill Pittsburgh, USA}}
+\par \textbf{Visiting Researcher}, advised by \href{https://jiaoyangli.me/}{Jiaoyang Li} \hfill \textit{Apr 2025 | Mar 2026}
+\par \textbf{Research Topics}: Learning for Planning, Multi-Robot System. 
+ % Position and duration
+% \par Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [2]. 
+% \par Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [1]. \\
+\vspace{-0.05in}
+\begin{itemize}
+    \item Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [5].
+    \item Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [3].
+\end{itemize}
+\vspace{-0.02in}
+{\textbf{\fontsize{12pt}{4pt}\selectfont S}\textbf{\scshape HANGHAI JIAO TONG UNIVERSITY \hfill Shanghai, China}} % Position and duration
+\par \textbf{Research Intern}, advised by \href{https://rap-lab.github.io/team/zren/}{Zhongqiang Ren}  \hfill \textit{Apr 2024 | Apr 2025}
+\par \textbf{Research Topics}: Heuristic Search, Multi-Robot System.
+
+% \par Scalable planners for Multi-Robot Path Planning that scale to 1,000+ robots [5].
+% \par Complete, anytime planning framework with pruning and sorting strategies that accelerated search [4]. 
+\vspace{-0.05in}
+\begin{itemize}
+    \item Scalable planners for multi-robot path planning that scale to 1,000+ robots [8].
+    \item Complete, anytime planning framework with pruning and sorting strategies that accelerated search [7].
+\end{itemize}
+% \vspace{-0.02in}
+% \vspace{-0.10in}
+
+
+
+% Experience Section
+% \section*{RESEARCH EXPERIENCE}
+% \section*{{\textbf{\fontsize{14pt}{8pt}\selectfont R}\textbf{\scshape ESEARCH EXPERIENCE}}}
+% {\textbf{\fontsize{12pt}{4pt}\selectfont H}\textbf{\scshape KUST (GUANGZHOU), {\href{https://sites.google.com/view/haoangli/homepage }{IPRN Lab}}\hfill Guangzhou, China}}
+% \par\textit{Mentor: {\href{https://songwxuan.github.io/}{\textbf{Wengxuan Song}}}, Supervisor: Prof. {\href{https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/LI-Haoang/haoangli}{\textbf{Haoang Li}}}\hfill Mar 2026 | Present}  % Position and duration
+% \begin{itemize}
+%     \item \textbf{Research Topics}: Foundation Model, Vision-Language-Action Model, World Action Model.
+%     \item Physics and action understanding in VLA pretraining, and large-scale annotation of egocentric human videos.
+%     \item Active perception for world action models.
+%     % \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [2].
+%     % \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
+%     % \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
+% \end{itemize}
+% {\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY, {\href{https://safeai-lab.github.io/}{SAFE AI Lab}}\hfill Pittsburgh, USA}}
+% \par\textit{Mentor: {\href{https://yaruniu.com/}{\textbf{Yaru Niu}}}, Supervisor: Prof. {\href{https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html}{\textbf{Ding Zhao}}}\hfill Aug 2025 | Mar 2026}  % Position and duration
+% \begin{itemize}
+%     \item \textbf{Research Topics}: Manipulation, Cross-Embodiment, Whole-Body Controller.
+%     \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [2].
+%     \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
+%     \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
+% \end{itemize}
+% {\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ARNEGIE MELLON UNIVERSITY, {\href{https://www.ri.cmu.edu/robotics-groups/arcs-lab/}{ARCS Lab}}\hfill Pittsburgh, USA}}
+% \par\textit{Mentor: {\href{https://yoraish.com/}{\textbf{Yorai Shaoul}}}, {\href{https://jingtianyan.github.io/}{\textbf{Jingtian Yan}}}, Supervisor: Prof. {\href{https://jiaoyangli.me/}{\textbf{Jiaoyang Li}}}\hfill Apr 2025 | Mar 2026}  % Position and duration
+% \begin{itemize}
+%     \item \textbf{Research Topics}: Learning for Planning, Heuristic Search, Multi-Robot System.
+%      \item Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [1].
+%     \item Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [3].
+% \end{itemize}
+% {\textbf{\fontsize{12pt}{4pt}\selectfont S}\textbf{\scshape HANGHAI JIAO TONG UNIVERSITY {\href{https://rap-lab.github.io/}{RAP Lab}}\hfill Shanghai, China}}
+% \par\textit{Supervisor: Prof. {\href{https://rap-lab.github.io/team/zren/}{\textbf{Zhongqiang Ren}}}\hfill Apr 2024 | Apr 2025} % Position and duration
+% \begin{itemize}
+%     \item \textbf{Research Topics}: Heuristic Search, Multi-Robot System.
+%     \item Developed scalable planners for Multi-Robot Path Planning that scale to 1,000+ robots [5].
+%     \item Designed complete, anytime planning framework with pruning and sorting strategies that accelerated search [4].
+% \end{itemize}
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont S}\textbf{\scshape KILLS}}}
+\vspace{-0.10in}
+% \begin{itemize}
+% \textbf{Professional Services:} Program Chair Member/Reviewer (IROS 2025, 2026) 
+% \par\vspace{4pt}\noindent
+\textbf{Platforms:}{ Wuji Hand 2, X-Arm, AgileX ALOHA, AgileX Piper Arm, Apple Vision Pro, Meta Quest 2, Unitree
+G1 Humanoid}
+\par\vspace{1pt}\noindent
+\textbf{Simulators:}{ MJLab, IsaacLab, MuJoCo, PyBullet}
+\par\vspace{1pt}\noindent
+\textbf{Programming:}{ Python, C++, Java, HTML, MATLAB, \LaTeX}
+% \par\vspace{4pt}\noindent
+% \textbf{Online Course:}{ \href{https://diffusion.csail.mit.edu/}{MIT: 6.S184 Flow-matching \& Diffusion Model}, \href{https://rail.eecs.berkeley.edu/deeprlcourse/}{UCB: CS 285 Deep RL}, \href{http://vision.stanford.edu/teaching/cs231n/index.html}{Stanford: CS 231n Deep learning for CV}, \href{https://16-831.github.io/spring25/}{CMU: 16-831 Intro to Robot Learning}, \href{https://www.cs.cmu.edu/~mgormley/courses/10601-s23/schedule.html}{CMU: 10-601 Intro to ML}, 
+% \href{https://optimalcontrol.ri.cmu.edu/}{CMU: 16745 Optimal Control}, \href{https://www.cs.cmu.edu/~maxim/classes/robotplanning_grad/}{CMU: 16-782 Planning in Robotics}, \href{https://www.coursera.org/account/accomplishments/verify/XVUC35BRMWXK}{UPenn: Computational Motion Planning}, \href{https://www.coursera.org/account/accomplishments/verify/JUGYQI60Y5VO}{UPenn: Aerial Robotics}}
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont S}\textbf{\scshape ERVICES}}}
+% \begin{itemize}
+\vspace{-0.10in}
+\textbf{Conference Reviewer:}  \par 2025-2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)  \par 2026 The Conference on Robot Learning (CoRL)  \par 2027 IEEE International Conference on Robotics \& Automation (ICRA)
+\par\vspace{1pt}\noindent
+\textbf{Journal Reviewer:}{ \par 2026 IEEE Robotics and Automation Letters (RA-L)}
+
+
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont H}\textbf{\scshape ONORS}}}
+% \textbf{Outstanding Visiting Student Fellowship from USIEA}  \hfill Guangzhou, China \\
+% \textit{Awarded to the top student in the UC Berkeley Global Access program; received 6,000 CNY \hfill Mar 2024}
+% \par\vspace{6pt}\noindent
+\vspace{-0.10in}
+\textbf{Merit Student of South China University of Technology}   \\
+\textit{Top student in Robotics Engineering, Class of 2022 }
+\par\vspace{2pt}\noindent
+\textbf{Best Paper Award}   \\
+\textit{IROS 2026 PWMS(Physical World Models for Scaling Embodied AI) Workshop}
+% \par\vspace{6pt}\noindent
+% \textbf{The Third Prize Scholarship by South China University of Technology}  \hfill Guangzhou, China\\ 
+% \textit{Top 10\% of students, receiving 10,000 CNY \hfill Dec 2023}
+% \par\vspace{6pt}\noindent
+% \textbf{Exchange Student Fellowship from South China University of Technology}  \hfill Guangzhou, China\\ 
+% \textit{Awarded to outstanding students for overseas exchange, receiving 40,000 CNY  \hfill Jul 2023} 
+
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont P}\textbf{\scshape RESS COVERAGE}}}
+\vspace{-0.10in}
+\textbf{"LAMP Helps Robots Find a Way Through"}  \\
+\textit{by Mallory Lindahl, CMU Robotics News, 2026 \href{https://www.ri.cmu.edu/lamp-helps-robots-find-a-way-through/}{[Link]}}
+
+\end{document}

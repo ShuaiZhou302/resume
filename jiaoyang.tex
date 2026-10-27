@@ -1,0 +1,396 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+% \usepackage[hidelinks]{hyperref} % For hyperlinks, without colors and borders
+\usepackage[colorlinks=true,    % 彩色文字而不是彩色边框
+            linkcolor=blue,     % 文内交叉引用（\ref等）的颜色
+            urlcolor=blue,      % \url 和 \href 的颜色
+            citecolor=red]{hyperref}  % 参考文献引用的颜色
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+% \usepackage{textcomp}
+%  for icon
+\usepackage{fontawesome5}
+\usepackage{academicons}  % 学术图标
+% \usepackage[hidelinks]{hyperref}  % 隐藏链接边框
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{gobble}
+\fancyhead{}
+% \fancyhead[L]{\textit{Shuai Zhou}}
+% \fancyhead[R]{\textit{Apr 2024}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{center}
+{\fontsize{24pt}{36pt}\selectfont\textbf{SHUAI ZHOU}}\\[3pt] % Name
+Senior Undergraduate Student of Robotics \\[2pt]
+\faEnvelope\ \href{mailto:davidzhou718@gmail.com}{davidzhou718@gmail.com}
+\quad \textbar{} \quad
+\faHome\ \href{https://www.shuai-zhou.com}{shuai-zhou.com}
+\quad \textbar{} \quad
+\faGithub\ \href{https://github.com/ShuaiZhou302}{ShuaiZhou302}
+\quad \textbar{} \quad
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=ONn1TXAAAAAJ&hl=en&oi=sra}{Shuai Zhou}
+ % Contact info
+\end{center}
+
+% Education Section
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont S}\textbf{\scshape UMMARY}}}
+\underline{\textbf{Research Interests:}} I am primarily interested in developing next-generation decision-making systems for robotics, unifying \textit{\textbf{planning and learning}}, and further enabling \textit{\textbf{multi-robot collaboration}}, \textit{\textbf{safe human-robot interaction}}. I envision such systems as \textit{\textbf{assistive robots in daily living support}} serving more people with disabilities.
+\par\vspace{4pt}\noindent
+\underline{\textbf{Highlights:}} 2 years of research experience with a solid mathematical and theoretical background; 4 years of programming experience with multiple languages; Half-year of experience with real robots across various platforms.
+\par\vspace{4pt}\noindent
+\underline{\textbf{Relevant Courses:}} Theory and Technology of Robotics(A); Artificial Intelligence(A); Data Analysis and Modeling(A); Data Structures(A); Designing Information Devices and Systems(A); Modeling, Analysis, and Control of Dynamic Systems(A); Design and Manufacturing I, II(A); Linear Algebra and Analytic Geometry(A); Probability and Statistics(A); Calculus(A);
+% Education Section
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont E}\textbf{\scshape DUCATION}}}
+% \par\vspace{4pt}\noindent
+\textbf{SOUTH CHINA UNIVERSITY OF TECHNOLOGY} \hfill Guangzhou, China\\ % University name and location
+\textit{Bachelor of Engineering in Robotics; GPA: 3.86/4.00  \hfill Sep 2022 | Jun 2026 (Expected)} % Degree and GPA  , Rank: 4/56
+% Core curriculum: Artificial Intelligences and technologies, Robotics theory and technology, Design and Manufacture. \\
+\par\vspace{4pt}\noindent
+\textbf{CARNEGIE MELLON UNIVERSITY} \hfill Pittsburgh, United States \\ % University name and location
+\textit{Visiting Student in Robotics Institute; Host: Prof. {\href{https://jiaoyangli.me/}{\textbf{Jiaoyang Li}}}  \hfill Jun 2025 | Feb 2026 (Expected)}  % Degree and GPA
+% % Core curriculum:  Data Structures, Designing information devices and Systems \uppercase\expandafter{\romannumeral1}, Introduction to Solid Mechanics.
+% % \noindent 
+\par\vspace{4pt}\noindent
+\textbf{UNIVERSITY OF CALIFORNIA, BERKELEY} \hfill Berkeley, United States\\ % University name and location
+\textit{Exchange Student concentrate in EECS; GPA: 4.00/4.00 \hfill   Aug 2023 | Dec 2023} % Degree and GPA
+% Core curriculum:  Data Structures, Designing information devices and Systems \uppercase\expandafter{\romannumeral1}, Introduction to Solid Mechanics.
+% \noindent
+% Thesis Title: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX% Additional info
+
+
+% Additional info
+
+% \textbf{\# Name of Employer Company} \hfill \#City, \#Country\\ % Company name and location
+% \textit{\# Your Position} \hfill \#Month \#Year | Present % Position and duration
+% \begin{itemize}
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     % Job responsibilities and achievements
+% \end{itemize}
+
+% Projects Section
+% \section*{PROJECTS}
+% \noindent
+% \textbf{\# Project Name} \hfill \#City, \#Country\\ % Project name and location
+% \textit{\# Your Position}
+%    \hfill \#Month \#Year | \#Month \#Year % Project link and duration
+
+% \begin{itemize}
+%      \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+% \end{itemize}
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont P}\textbf{\scshape UBLICATION}}(† equal contribution)}
+% \section*{PUBLICATIONS († equal contribution)}
+{\textbf{\fontsize{12pt}{4pt}\selectfont P}\textbf{\scshape REPRINT}}
+\par\vspace{4pt}\noindent
+% \textbf{† denotes equal contribution} \\
+\par\textbf{Bridging Planning and Execution: Multi-Agent Path Finding Under Real World Deadlines}
+\par\textup{Jingtian Yan†, \underline{\textbf{Shuai Zhou†}}, Stephen Smith, Jiaoyang Li  \hfill | \textbf{Under Review}}
+% \\   % Project name and location  
+% \par\textup{\textbar{} \href{https://drive.google.com/file/d/1aMQLKRtv2wMeL6v5GP8K-ZbqjtgL2ZbW/view?usp=sharing}{[Paper]} \textbar{}} 
+\begin{itemize} 
+    \item Proposed a general MAPF framework that bridges the gap between planning and real-world execution (REMAP). 
+    \item Incorporated an execution-time predictor (ExecTimeNet) with planners to solve the MAPF with Real-world Deadlines.
+    \item Achieved 20\% less cost in realistic simulations and deployment.
+\end{itemize} 
+% \noindent
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ONFERENCE PROCEEDING}}
+\par\vspace{4pt}\noindent
+\par\textbf{LSRP*: Scalable and Anytime Planning for Multi-Agent Path Finding with Asynchronous Actions}
+\par\textup{\underline{\textbf{Shuai Zhou}}, Shizhe Zhao, Zhongqiang Ren  \hfill | \textbf{In SoCS 2025}}   % Project name and location  
+\par\textup{\textbar{} \href{https://doi.org/10.1609/socs.v18i1.36016}{[Paper]} \textbar{} \href{https://rap-lab.github.io/research/mapfaa}{[Web]} \textbar{}}
+% \textup{\href{https://arxiv.org/pdf/2412.11678}{\textbf{arxiv preprint}}} 
+\begin{itemize} 
+    \item Extended LSRP planner to an anytime search framework with completeness and optimality guarantees.
+    \item Identified and corrected theoretical flaws in prior work's state grouping.
+    \item Scaled to 1,000 robots with near-optimal solutions within limited runtime and eventually converged to the optimal one. 
+\end{itemize} 
+\par\textbf{Loosely Synchronized Rule-Based Planning for
+Multi-Agent Path Finding with Asynchronous Actions}
+\par\textup{\underline{\textbf{Shuai Zhou}}, Shizhe Zhao, Zhongqiang Ren   \hfill | \textbf{In AAAI 2025}}  % Project name and location 
+\par\textup{\textbar{} \href{https://doi.org/10.1609/aaai.v39i14.33618}{[Paper]}  \textbar{} \href{https://github.com/rap-lab-org/public_LSRP}{[Code]}  \textbar{} \href{https://rap-lab.github.io/research/mapfaa}{[Web]} \textbar{}}
+\begin{itemize}
+    \item  Proposed a novel rule-based approach to Multi-Agent Path Finding with Asynchronous Actions.
+    \item Combined asynchronous search-state and rule-based interaction to avoid both deadlock and livelock.
+    \item Demonstrated ability to handle 10× more agents than baselines with only 25\% longer makespan.
+    % \item Kahnemann, D., \& Tversky, A. (1979). Prospect theory: A decision making under risk. Econometrica, 47(2), 263-291.
+\end{itemize}
+
+
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont S}\textbf{\scshape KILL}}}
+% \begin{itemize}
+\textbf{Professional Services:} Reviewer (IROS 2025) 
+\par\vspace{4pt}\noindent
+\textbf{Robot Platforms:}{ Unitree
+G1 Humanoid, Unitree Go1 Quadruped, UFACTORY X-ARM 7}
+\par\vspace{4pt}\noindent
+\textbf{Robot Simulations:}{ IsaacLab, Mujoco, Pybullet}
+\par\vspace{4pt}\noindent
+\textbf{Programming Languages:}{ Python, C++, Java, HTML, MATLAB, \LaTeX}
+\par\vspace{4pt}\noindent
+\textbf{Operating Systems:}{ Windows, Linux(Ubuntu)}
+    % \item \textbf{Version Control}{: Git}
+    % \item \textbf{Writing}{: \LaTeX}
+    % \item \textbf{Languages}{: Chinese (native), English (fluent)}
+    % \item \textbf{Test scores}{:Toefl (100), Gre (321), CET6 (594), CET4 (608), Duolingo (120)}
+    % \item \textbf{Additional Courses}
+    %      \begin{itemize}
+    %      \item 
+    %      \href{https://diffusion.csail.mit.edu/}{MIT: 6.S184 Generative AI with Stochastic Differential Equations (Diffusion and Flow model)}
+    %      \item 
+    %      \href{https://rail.eecs.berkeley.edu/deeprlcourse/}{UC Berkeley: CS 285 Deep Reinforcement Learning}
+    %      \item 
+    %      \href{https://16-831.github.io/spring25/}{CMU: 16-831 Introduction to Robot Learning}
+    %      % \item 
+    %      % \href{https://optimalcontrol.ri.cmu.edu/}{CMU: 16745 Optimal Control and Reinforcement Learning}
+    %      \item 
+    %      \href{https://www.cs.cmu.edu/~mgormley/courses/10601-s23/schedule.html}{CMU: 10-301/601 Introduction to Machine Learning}
+    %      \item \href{https://www.cs.cmu.edu/~maxim/classes/robotplanning_grad/}{CMU: 16-782 Planning and Decision-making in Robotics}
+    %      \item \href{https://www.coursera.org/account/accomplishments/verify/XVUC35BRMWXK}{UPenn: Robotics: Computational Motion Planning}
+    %      \item \href{https://www.coursera.org/account/accomplishments/verify/JUGYQI60Y5VO}{UPenn: Robotics: Aerial Robotics}
+    %  \end{itemize}
+    % \item \textbf{Test grades}{: Gre(321), Duolingo(120)}
+% \end{itemize} 
+
+% Experience Section
+% \section*{RESEARCH EXPERIENCE}
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont R}\textbf{\scshape ESEARCH PROJECT EXPERIENCE}}(lead and co-lead)}
+{\textbf{\fontsize{12pt}{4pt}\selectfont L}\textbf{\scshape EARNING CROSS-EMBODIMENT MANIPULATION WITH HUMAN DEMONSTRATIONS}}
+\par\vspace{4pt}\noindent
+\par\textbf{CARNEGIE MELLON UNIVERSITY, {\href{https://safeai-lab.github.io/}{SAFE AI Lab}}}\hfill Pittsburgh, United States  % Company name and location
+\par\textit{Research Intern; Supervised by Prof. {\href{https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html}{\textbf{Ding Zhao}}}   \hfill Sep 2025 | Present}  % Position and duration
+\begin{itemize}
+    % \item Research in Multi-Agent Path Finding (Multi-Robot Path Planning).
+    % \item Co-leading a project on Cross-Embodiment policy learning from egocentric human demonstration. 
+    \item Improving Cross-Embodiment manipulation model with flow-matching action-head for better generalization.
+    \item Developing a who-body controller for the humanoid with reinforcement learning and imitation learning (teacher-student).
+    \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
+    \item Evaluating learned policies in simulation (IsaacLab) and physical robots (G1 Humanoid, Go1 Quadruped, X-ARM).  
+    % \item Extending ideas of Multi-Agent Path Finding to Multi-Arm Motion Planning.
+    % \item One paper is accepted by \textbf{AAAI-2025}.
+    % \item \# Description of your job duty and responsibilities.
+    % \item \# Description of your job duty and responsibilities.
+    % Job responsibilities and achievements
+\end{itemize}
+{\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape OLLABORATIVE MULTI-ROBOT TASK AND MOTION PLANNING}}
+\par\vspace{4pt}\noindent
+\par\textbf{CARNEGIE MELLON UNIVERSITY, {\href{https://www.ri.cmu.edu/robotics-groups/arcs-lab/}{ARCS Lab}}}\hfill Pittsburgh, United States   % Company name and location
+\par\textit{Research Intern; Supervised by Prof. {\href{https://jiaoyangli.me/}{\textbf{Jiaoyang Li}}} \hfill Sep 2025 | Present}  % Position and duration
+\begin{itemize}
+    % \item Research in Multi-Agent Path Finding (Multi-Robot Path Planning).
+    \item Proposing planning methods that search and sample manipulation motions learned by flow-matching cogeneration. 
+    \item Evaluating algorithms (C++, Python) in Mujoco simulation and on mobile robots.
+    % \item One Co-first-author paper submitted to \textbf{AAAI 2026}
+    % \item Extending ideas of Multi-Agent Path Finding to Multi-Arm Motion Planning.
+    % \item One paper is accepted by \textbf{AAAI-2025}.
+    % \item \# Description of your job duty and responsibilities.
+    % \item \# Description of your job duty and responsibilities.
+    % Job responsibilities and achievements
+\end{itemize}
+{\textbf{\fontsize{12pt}{4pt}\selectfont B}\textbf{\scshape RIDGING PLANNING AND EXECUTION FOR REAL-WORLD ROBOT COORDINATION}}
+\par\vspace{4pt}\noindent
+\par\textbf{CARNEGIE MELLON UNIVERSITY, {\href{https://www.ri.cmu.edu/robotics-groups/arcs-lab/}{ARCS Lab}}}\hfill Pittsburgh, United States   % Company name and location
+\par\textit{Research Intern; Supervised by Prof. {\href{https://jiaoyangli.me/}{\textbf{Jiaoyang Li}}} \hfill Apr 2025 | Present}  % Position and duration
+\begin{itemize}
+    % \item Research in Multi-Agent Path Finding (Multi-Robot Path Planning).
+    \item Bridging path planning and execution by introducing Multi-Agent Path Finding with Real-world Feedback. 
+    \item Learning execution-time prediction models for real-world planning feedback.
+    \item Developing a closed-loop planning execution framework with the learned model to replan and reset the dependency. 
+    \item Evaluating algorithms(C++, Python) in simulation and mobile robots. Co-first-author paper under preparation.
+    % \item One Co-first-author paper submitted to \textbf{AAAI 2026}
+    % \item Extending ideas of Multi-Agent Path Finding to Multi-Arm Motion Planning.
+    % \item One paper is accepted by \textbf{AAAI-2025}.
+    % \item \# Description of your job duty and responsibilities.
+    % \item \# Description of your job duty and responsibilities.
+    % Job responsibilities and achievements
+\end{itemize}
+% \subsection*{Scalable Path Planning For Multi-Robot with Asynchronous Actions}
+{\textbf{\fontsize{12pt}{4pt}\selectfont S}\textbf{\scshape CALABLE PATH PLANNING FOR MULTI-ROBOT WITH ASYNCHRONOUS ACTIONS}}
+\par\vspace{4pt}\noindent
+\par\textbf{UNIVERSITY OF CALIFORNIA, IRVINE, {\href{https://idm-lab.org/group.html}{IDM Lab}}} \hfill Irvine, United States  % Company name and location
+\par\textit{Research Collaboration; Supervised by Prof. {\href{https://idm-lab.org/index.html}{\textbf{Sven Koenig}}} \hfill  Mar 2025 | Jul 2025}  % Position and duration
+\begin{itemize}
+    % \item Research in Multi-Agent Path Finding (Multi-Robot Path Planning).
+    \item Developed an unbounded suboptimal anytime planner for Multi-Agent Path Finding with Asynchronous Actions.
+    \item Proposed congestion-aware heuristics and look-ahead mechanisms to improve solution refinement.
+    \item Evaluated algorithms (C++) in grid-based simulation. One first-author journal paper is under preparation.
+    % \item One paper is accepted by \textbf{AAAI-2025}.
+    % \item \# Description of your job duty and responsibilities.
+    % \item \# Description of your job duty and responsibilities.
+    % Job responsibilities and achievements
+\end{itemize}
+\par\textbf{SHANGHAI JIAO TONG UNIVERSITY, {\href{https://rap-lab.github.io/}{RAP Lab}}}\hfill Shanghai, China  % Company name and location
+\par\textit{Research Intern; Supervised by Prof. {\href{https://rap-lab.github.io/team/zren/}{\textbf{Zhongqiang Ren}}} \hfill   Apr 2024 | Sep 2025} % Position and duration
+\begin{itemize}
+    % \item Research in Multi-Agent Path Finding (Multi-Robot Path Planning).
+    \item Developed scalable planners for Multi-Agent Path Finding with Asynchronous Actions that scale to 1,000+ robots.
+    \item Proposed wait-move synchronization for asynchronous rule-based robot interactions to avoid both deadlock and livelock.
+    \item Designed complete, anytime planning framework with proposed pruning and sorting strategies that accelerated search. 
+    \item Evaluated algorithms (C++) in grid-based simulation and analyzing theoretical properties (completeness, optimality). One first-author paper accepted by \textbf{AAAI 2025} and one extended abstract accepted by \textbf{SoCS 2025}.
+    % \item \textbf{Project 3:} Led research on scalable planer for Multi-Agent Path Finding with Capacity Constrains, capable of planning for 10,000 agents in city networks with a few seconds. 
+    % \item Designed, implemented (C++), and evaluated algorithms in grid-based simulation; analyzed theoretical properties.
+    % \item One first-author paper accepted by \textbf{AAAI 2025} and one extended abstract accepted by \textbf{SoCS 2025}.
+    % \item \# Description of your job duty and responsibilities.
+    % \item \# Description of your job duty and responsibilities.
+    % Job responsibilities and achievements
+\end{itemize}
+% \noindent
+% \textbf{\# Here you can also add your other publication such as: Translation, book and so on ...}
+% \begin{itemize}
+%     \item O'Connor, J., Lages, A. (2019). Coaching the brain: Practical applications of neuroscience to coaching. Routledge.
+% \end{itemize}
+
+
+
+% \section*{OTHER EXPERIENCES}
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont W}\textbf{\scshape ORK EXPERIENCE}}}
+\textbf{QT STEAM Education, Winter Robot Camp}  \hfill Shenzhen, China\\ % Company name and location
+\textit{Teaching Assistant} \hfill Jan 2024 | Feb 2024 % Position and duration
+\begin{itemize}
+    \item Taught fundamentals of C programming, ROS basics, and circuit board design.
+    \item Provided hands-on mentorship to help high school students build simple autonomous navigation robots.
+\end{itemize}
+\textbf{South China University of Technology, Volunteer Work}  \hfill Guangzhou, China\\ % Company name and location
+\textit{Volunteer} \hfill Mar 2023 | Jul 2024 % Position and duration
+\begin{itemize}
+    \item  Completed 40+ hours of volunteer service, including organizing student sports meets and college admission interviews, supporting campus open days and international events, and assisting with school anniversary celebrations.
+\end{itemize}
+
+% \section*{SERVICE}
+% \textbf{Reviewer}: IROS 2025
+
+
+% \section*{SELECTED COURSES}
+%     \begin{tabularx}{1\textwidth}{
+%     >{\raggedright\arraybackslash}X 
+%    >{\raggedright\arraybackslash}X }
+%      %  \textbf{Master's Courses}&   \textbf{Bachelor's Courses}\\ 
+%      % \begin{itemize}
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      % \end{itemize}
+%      % & \begin{itemize}
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %     \item \# Course that worth mentioning for committee
+%      %          \end{itemize}\\
+%          \textbf{Additional Courses}
+%          \begin{itemize}
+%          \item \href{https://www.cs.cmu.edu/~mgormley/courses/10601-s23/schedule.html}{CMU: 10301/601 Introduction to Machine Learning}
+%          \item \href{https://www.cs.cmu.edu/~maxim/classes/robotplanning_grad/}{CMU: 16-782 Planning and Decision-making in Robotics}
+%          \item \href{https://www.coursera.org/account/accomplishments/verify/XVUC35BRMWXK}{Coursera: Robotics: Computational Motion Planning}
+%          \item \href{https://www.coursera.org/account/accomplishments/verify/JUGYQI60Y5VO}{Coursera: Robotics: Aerial Robotics}
+%      \end{itemize}
+%     \end{tabularx}
+
+
+
+
+% \section*{ENGLISH \& GRE TESTS}
+%     \begin{tabularx}{1\textwidth}{
+%     >{\raggedright\arraybackslash}X 
+%    >{\raggedright\arraybackslash}X }
+%       \textbf{IELTS (Academic): 7.5} (overall score)&   \textbf{GRE General Test:}\\ \\
+%     Listening: XX | Reading: XX & Quant: XXX | Verbal: XXX\\
+%     Speaking: XX   | Writing: XX& Analytical writing: X\\
+%     Test date: \#Month \#Year &Test date: \#Month \#Year
+%     \end{tabularx}
+
+% Skills Section
+% \section*{HONORS AND AWARDS}
+\section*{{\textbf{\fontsize{14pt}{8pt}\selectfont H}\textbf{\scshape ONARS AND AWARDS}}}
+\textbf{Outstanding Visiting Student Fellowship from USIEA}  \hfill Guangzhou, China \\
+\textit{Awarded to the top student in the UC Berkeley Global Access program; received 6,000 CNY \hfill Mar 2024}
+\par\vspace{6pt}\noindent
+\textbf{Merit Student of South China University of Technology}  \hfill Guangzhou, China \\
+\textit{Top student in Robotics Engineering, Class of 2022 \hfill Feb 2024 }
+\par\vspace{6pt}\noindent
+\textbf{The Third Prize Scholarship by South China University of Technology}  \hfill Guangzhou, China\\ 
+\textit{Top 10\% of students, receiving 10,000 CNY \hfill Dec 2023}
+\par\vspace{6pt}\noindent
+\textbf{Exchange Student Fellowship from South China University of Technology}  \hfill Guangzhou, China\\ 
+\textit{Awarded to outstanding students for overseas exchange, receiving 40,000 CNY  \hfill Jul 2023} 
+
+
+
+
+
+
+% \section*{REFERENCES}
+% \textbf{Prof. Ding Zhao}\\
+% \textit{Associate Professor, Carnegie Mellon University}\\ 
+% E-mail: \href{mailto:dingzhao@cmu.edu}{dingzhao@cmu.edu} \\
+% Department: Mechanical Engineering, Robotics Institute \\ \\
+% \textbf{Prof. Jiaoyang Li}\\
+% \textit{Assistant Professor, Carnegie Mellon University}\\ 
+% E-mail: \href{mailto:jiaoyanl@andrew.cmu.edu}{jiaoyangli@cmu.edu} \\
+% Department: Robotics Institute \\ \\
+% % \textbf{Prof. Sven Koenig}\\
+% % \textit{Chancellor's Professor and Bren Chair, University of California, Irvine}\\ 
+% % E-mail: \href{mailto:sven.koenig@uci.edu}{sven.koenig@uci.edu} \\
+% % Department: \href{https://ics.uci.edu/}{Donald Bren School of Information and Computer Science} \\ \\
+% \textbf{Prof. Zhongqiang Ren}\\
+% \textit{Assistant Professor, Shanghai Jiao Tong University}\\ 
+% E-mail: \href{mailto:zhongqiang.ren@sjtu.edu.cn}{zhongqiang.ren@sjtu.edu.cn} \\
+% Department: University of Michigan - Shanghai Jiao Tong University Joint Institute \\ \\
+% \textbf{Dr. Shizhe Zhao}\\
+% \textit{Postdoctoral, Shanghai Jiao Tong University }\\ 
+% E-mail: \href{mailto:shizhe.zhao@sjtu.edu.cn}{shizhe.zhao@sjtu.edu.cn} \\
+% Department: University of Michigan - Shanghai Jiao Tong University Joint Institute\\ \\
+% \textbf{Yaru Niu}\\
+% \textit{Ph.D. Candidate, Carnegie Mellon University}\\ 
+% E-mail: \href{mailto:yarun@andrew.cmu.edu}{yarun@andrew.cmu.edu} \\
+% Department: Mechanical Engineering\\ \\
+% \textbf{Yorai Shaoul}\\
+% \textit{Ph.D. Candidate, Carnegie Mellon University}\\ 
+% E-mail: \href{mailto:yshaoul@andrew.cmu.edu}{yshaoul@andrew.cmu.edu} \\
+% Department: Robotics Institute\\ \\
+% \textbf{Jingtian Yan}\\
+% \textit{Ph.D. Candidate, Carnegie Mellon University}\\ 
+% E-mail: \href{mailto:jingtiay@andrew.cmu.edu}{jingtiay@andrew.cmu.edu} \\
+% Department: Robotics Institute\\ 
+% \textbf{Prof. John Doe}\\
+% \textit{\#Position, \# Department, \# Organization name or University name, \# City, \# Country}\\
+% E-mail: \href{mailto:johndoe@XXX.XX}{johndoe@XXX.XX}\\
+% Scholar Profiles: \href{related link}{University of XXX - Personal Page} | \href{related link}{Google Scholar} | \href{https://www.linkedin.com/in/xxxxxxxx}{LinkedIn}\\ \\
+% \textbf{Prof. John Doe}\\
+% \textit{\#Position, \# Department, \# Organization name or University name, \# City, \# Country}\\
+% E-mail: \href{mailto:johndoe@XXX.XX}{johndoe@XXX.XX}\\
+% Scholar Profiles: \href{related link}{University of XXX - Personal Page} | \href{related link}{Google Scholar} | \href{https://www.linkedin.com/in/xxxxxxxx}{LinkedIn}\\ \\
+% End document
+\end{document}
