@@ -7,6 +7,7 @@
 \geometry{letterpaper, margin=0.75in} % Set paper size and margins
 \usepackage{titlesec} % For section title formatting
 \usepackage{enumitem} % For itemized list formatting
+\usepackage{etaremune} % Automatically number publications in reverse order
 % \usepackage[hidelinks]{hyperref} % For hyperlinks, without colors and borders
 \usepackage[colorlinks=true,    % 彩色文字而不是彩色边框
             linkcolor=blue,     % 文内交叉引用（\ref等）的颜色
@@ -26,6 +27,19 @@
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
 %%%%%%%%%%
+
+
+% Separate reverse-numbered publication lists: P = preprint, C = conference.
+% Add new papers at the top of the appropriate list. Compile three times
+% after changing the lists so counts and cross-references both settle.
+\newenvironment{publicationlist}[1]{%
+    \renewcommand{\theenumi}{#1\arabic{enumi}}%
+    \renewcommand{\labelenumi}{[\theenumi]}%
+    \begin{etaremune}[leftmargin=2.8em,labelwidth=2.3em,labelsep=0.5em,
+        itemsep=0pt,parsep=0pt]%
+}{%
+    \end{etaremune}%
+}
 
 % Begin document
 \begin{document}
@@ -78,7 +92,7 @@ Master Student of Robotics \\[1pt]
 {\textbf{\fontsize{12pt}{4pt}\selectfont P}\textbf{\scshape REPRINTS}}
 % \par\vspace{4pt}\noindent
 \vspace{-0.05in}
-\begin{enumerate}[label={[\arabic*]}, leftmargin=2em]
+\begin{publicationlist}{P}
 % \par\textup{Under Review, 2026. \href{https://arxiv.org/abs/2604.13015}{[Paper]} \href{https://humanoid-touch-dream.github.io/}{[Project]} \href{https://github.com/chrisyrniu/humanoid-touch-dream}{[Code]} 
 % \href{https://spectrum.ieee.org/video-friday-humanoid-robot-production}{[Media]}
 % }
@@ -86,45 +100,45 @@ Master Student of Robotics \\[1pt]
 % \par\textup{Yaru Niu, Binghong Chen, Zhenlong Fang, Changwei Yao, Hao Zhang, Yuemin Mao, \underline{\textbf{Shuai Zhou}}, Bingqing Chen, Chen Qiu, Eric H. Tseng, Jonathan Francis, Ding Zhao. }
 % \par\textup{Under Review, 2026. \href{https://humanoid-touch-dream.github.io/}{[Project]}
 % }
-\item \textbf{ActiveScale: Scaling Active Perception for Robots across
+\item\phantomsection\label{pub:activescale} \textbf{ActiveScale: Scaling Active Perception for Robots across
 Model, Data, and Hardware}
 \par\textup{\underline{Shuai Zhou}*, Kaisheng Pang*, Wenxuan Song, Wenjie Zhang, Xinhu Zheng, Haoang Li. \\ \textbf{Under Review, 2026}  \href{https://arxiv.org/abs/2609.18514}{[Paper]}}
-\item \textbf{UniWAM: Unified World-Action Model}
+\item\phantomsection\label{pub:uniwam} \textbf{UniWAM: Unified World-Action Model}
 \par\textup{Jiayi Chen*, Wenxuan Song*, Jingbo Wang*, \underline{Shuai Zhou*}, Xicheng Gong*, Zehua Fan, Ziyang Zhou, Junwu E, Haodong Yan, Fuhao Li, Qize Yu, Xu Huang, Pengwei Wang, Wen Chen, Shunbo Zhou, Haoang Li. \\ \textbf{Under Review, 2026} \href{https://arxiv.org/abs/2610.02054}{[Paper]}}
 
-\item \textbf{From Discrete Plans to Real-World Execution: A World-Model-Driven Framework for Execution-Aware Multi-Agent Path Finding}
+\item\phantomsection\label{pub:execution-mapf} \textbf{From Discrete Plans to Real-World Execution: A World-Model-Driven Framework for Execution-Aware Multi-Agent Path Finding}
 \par\textup{Jingtian Yan, \underline{Shuai Zhou}, He Jiang, Stephen Smith, Jiaoyang Li. \\ \textbf{Under Review, 2026} \href{https://arxiv.org/abs/2511.21886}{[Paper]}}
 % \par\textup{Under Review, 2026. \href{https://arxiv.org/abs/2511.21886}{[Paper]}}
-\item \textbf{EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming}
+\item\phantomsection\label{pub:egox} \textbf{EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming}
 \par\textup{Yaru Niu*, Binghong Chen*, Changwei Yao*, Shangtao Li*, Zhenlong Fang*, Revanth Krishna Senthilkumaran, \underline{Shuai Zhou}, Yuemin Mao, Kalie Ching, Po-Ju Chao, Yudong Luo, Peiqi Yu, Heng Zhang, Hao Zhang, Bingqing Chen, Chen Qiu, Hongtei (Eric) Tseng, Changliu Liu, Jonathan Francis, Ding Zhao. \\\textbf{Under Review, 2026} \href{https://egox-embodiment.github.io/assets/egox.pdf}{[Paper]} }
 
 % \item \textbf{EgoANT: 
 % Segmentation and Annotation for Egocentric Human Video with open-source VLM}
 % \par\textup{\underline{Shuai Zhou} \textbf{Blog, 2026} \href{https://www.shuai-zhou.com/egoant-report/?lang=en}{[Blog]}}
-\end{enumerate}
+\end{publicationlist}
 \vspace{-0.02in}
 {\textbf{\fontsize{12pt}{4pt}\selectfont C}\textbf{\scshape ONFERENCE PROCEEDINGS}}
 \vspace{-0.05in}
 % \par\vspace{4pt}\noindent
-\begin{enumerate}[label={[\arabic*]}, leftmargin=2em, resume]
-\item \textbf{LAMP: Long-Horizon Adaptive Manipulation Planning for Multi-Robot Collaboration in Cluttered Space}
+\begin{publicationlist}{C}
+\item\phantomsection\label{pub:lamp} \textbf{LAMP: Long-Horizon Adaptive Manipulation Planning for Multi-Robot Collaboration in Cluttered Space}
 \par\textup{\underline{Shuai Zhou}, Yorai Shaoul, Jiaoyang Li.  \\ \textbf{IROS, 2026}.  
 \href{https://arxiv.org/abs/2606.29358}{[Paper]} }
 
 % \href{https://github.com/ShuaiZhou302/LAMP}{[Code]} }
 % \par\textup{Under Review, 2026.  \href{https://multi-robot-lamp.github.io/}{[Project]}}
-\item \textbf{HTD: Learning Versatile Humanoid Manipulation with Touch Dreaming}
+\item\phantomsection\label{pub:htd} \textbf{HTD: Learning Versatile Humanoid Manipulation with Touch Dreaming}
 \par\textup{Yaru Niu, Zhenlong Fang, Binghong Chen, \underline{Shuai Zhou}, Revanth Krishna Senthilkumaran, Hao Zhang, Bingqing Chen, Chen Qiu, Hongtei (Eric) Tseng, Jonathan Francis, Ding Zhao. \\ \textbf{IROS, 2026.} \href{https://arxiv.org/abs/2604.13015}{[Paper]}}
 % \href{https://github.com/chrisyrniu/humanoid-touch-dream}{[Code]} 
 % \href{https://spectrum.ieee.org/video-friday-humanoid-robot-production}{[Media]}}
-\item \textbf{LSRP*: Scalable and Anytime Planning for Multi-Agent Path Finding with Asynchronous Actions}
+\item\phantomsection\label{pub:lsrp-star} \textbf{LSRP*: Scalable and Anytime Planning for Multi-Agent Path Finding with Asynchronous Actions}
 \par\textup{\underline{Shuai Zhou}, Shizhe Zhao, Zhongqiang Ren. \\ \textbf{SoCS, 2025.} \href{https://doi.org/10.1609/socs.v18i1.36016}{[Paper]}  }   % Project name and location  
 % \par\textup{SoCS, 2025. \href{https://doi.org/10.1609/socs.v18i1.36016}{[Paper]}  \href{https://rap-lab.github.io/research/mapfaa}{[Project]}} 
-\item \textbf{Loosely Synchronized Rule-Based Planning for Multi-Agent Path Finding with Asynchronous Actions}
+\item\phantomsection\label{pub:lsrp} \textbf{Loosely Synchronized Rule-Based Planning for Multi-Agent Path Finding with Asynchronous Actions}
 \par\textup{\underline{Shuai Zhou}, Shizhe Zhao, Zhongqiang Ren. \\ \textbf{AAAI, 2025.} \href{https://doi.org/10.1609/aaai.v39i14.33618}{[Paper]} }
 % \href{https://github.com/rap-lab-org/public_LSRP}{[Code]}}  % Project name and location 
 % \par\textup{AAAI, 2025. \href{https://doi.org/10.1609/aaai.v39i14.33618}{[Paper]} \href{https://rap-lab.github.io/research/mapfaa}{[Project]} \href{https://github.com/rap-lab-org/public_LSRP}{[Code]} }
-\end{enumerate}
+\end{publicationlist}
 \vspace{-0.02in}
 \vspace{-0.10in}
 \section*{{\textbf{\fontsize{14pt}{8pt}\selectfont E}\textbf{\scshape XPERIENCES}}}
@@ -148,8 +162,8 @@ Model, Data, and Hardware}
 \vspace{-0.05in}
 \begin{itemize}
     % \item \textbf{Research Topics}: Robot Foundation Model, Active Perception, Egocentric Human Data
-    \item Scaling Active Perception VLA with AMP teleoperation system and Human-Robot co-training [1].
-    \item World action model pretraining with egocentric-human data and corresponding annotation pipeline [2].
+    \item Scaling Active Perception VLA with AMP teleoperation system and Human-Robot co-training [\ref{pub:activescale}].
+    \item World action model pretraining with egocentric-human data and corresponding annotation pipeline [\ref{pub:uniwam}].
     % \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [2].
     % \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
     % \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
@@ -162,8 +176,8 @@ Model, Data, and Hardware}
 % \par Learning versatile humanoid manipulation policy and developing robust lower-body controller [3]. \\
 \vspace{-0.05in}
 \begin{itemize}
-    \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [6].
-    \item Egocentric cross-embodiment manipulation with embodiment-specific latent prediction [4].
+    \item Learning versatile humanoid manipulation policy and developing robust lower-body controller [\ref{pub:htd}].
+    \item Egocentric cross-embodiment manipulation with embodiment-specific latent prediction [\ref{pub:egox}].
     % \item Egocentric cross-embodiment learning for versatile manipulation, experimenting with co-training/pretraining-finetuning policy on multiple embodiments (G1 Humanoid, Go1 Quadruped, and X-ARM 7).
     % \item Collaborating with Stanford to collect a comprehensive physical robot dataset for tool use.
 \end{itemize}
@@ -176,8 +190,8 @@ Model, Data, and Hardware}
 % \par Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [1]. \\
 \vspace{-0.05in}
 \begin{itemize}
-    \item Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [5].
-    \item Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [3].
+    \item Collaborative multi-robot non-prehensile manipulation via flow-matching model and lazy planning [\ref{pub:lamp}].
+    \item Learning execution-time prediction models for closed-loop multi-robot coordination and dependency optimization [\ref{pub:execution-mapf}].
 \end{itemize}
 \vspace{-0.02in}
 {\textbf{\fontsize{12pt}{4pt}\selectfont S}\textbf{\scshape HANGHAI JIAO TONG UNIVERSITY \hfill Shanghai, China}} % Position and duration
@@ -188,8 +202,8 @@ Model, Data, and Hardware}
 % \par Complete, anytime planning framework with pruning and sorting strategies that accelerated search [4]. 
 \vspace{-0.05in}
 \begin{itemize}
-    \item Scalable planners for multi-robot path planning that scale to 1,000+ robots [8].
-    \item Complete, anytime planning framework with pruning and sorting strategies that accelerated search [7].
+    \item Scalable planners for multi-robot path planning that scale to 1,000+ robots [\ref{pub:lsrp}].
+    \item Complete, anytime planning framework with pruning and sorting strategies that accelerated search [\ref{pub:lsrp-star}].
 \end{itemize}
 % \vspace{-0.02in}
 % \vspace{-0.10in}
